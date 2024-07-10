@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../styles/cssTrabajo.css" type="text/css">
+</head>
+
+<body>
+    <form action="../index.html" method="GET">
+        <div class="header">
+            <div class="fecha">
+                15 de mayo de 2024
+            </div>
+            <div class="circleRegister">
+                <a href="../index.html"><img src="img/abc.png" alt="fotoLogo"></a>
+            </div>
+            <div class="text">
+                Do you have an account?
+                <a href="login.html">LOG IN</a>
+            </div>
+        </div>
+        <div class="register">
+            <div class="datosRegister">
+                <h1>Menú de registro</h1>
+                <div class="columnas">
+                    <div>
+                        Foto:<br>
+                        <input type="file" name="foto" id="foto" />
+                    </div>
+                    <div>
+                        Teléfono:<br>
+                        <input type="tel" name="telefono" id="telefono" required/>
+                    </div>
+                    <div>
+                        Nombre:<br>
+                        <input type="all" name="nombre" id="nombre" placeholder="Nombre aquí" required autofocus />
+                    </div>
+                    <div>
+                        Dirección completa:<br>
+                        <input type="text" id="direccion" name="direccion" size="50">
+                    </div>
+                    <div>
+                        Apellido:<br>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellidos aquí" required/>
+                    </div>
+                    <div>
+                        C.P.:<br>
+                        <input type="text" id="codigo_postal" name="codigo_postal" minlength="5" maxlength="10"
+                            size="10">
+                    </div>
+                    <div>
+                        Email:<br>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+                    <div>
+                        Población:<br>
+                        <input type="text" id="poblacion" name="poblacion">
+                    </div>
+                    <div>
+                        Contraseña:<br>
+                        <input type="password" name="contraseña" id="contraseña" required />
+                    </div>
+                    <div>
+                        Provincia (sólo Galicia):
+                        <select id="provincia" name="provincia">
+                            <option value="A Coruña">A Coruña</option>
+                            <option value="Lugo">Lugo</option>
+                            <option value="Ourense">Ourense</option>
+                            <option value="Pontevedra">Pontevedra</option>
+                        </select>
+                    </div>
+                    <div>
+                        Contraseña otra vez:<br>
+                        <input type="password" name="contraseña2" id="contraseña2" required />
+                    </div>
+                    <div class="seccionesPreferidas">
+                        Secciones preferidas:
+                        <div>
+                            <label for="inteligencia-artificial">Inteligencia Artificial</label>
+                            <input type="checkbox" id="inteligencia-artificial" name="seccionPreferida"
+                                value="inteligencia-artificial">
+                        </div>
+                        <div>
+                            <label for="tecnologia">Tecnología</label>
+                            <input type="checkbox" id="tecnologia" name="seccionPreferida" value="Tecnología">
+                        </div>
+                        <div>
+                            <label for="realidadVirtual">Realidad Virtual</label>
+                            <input type="checkbox" id="realidadVirtual" name="seccionPreferida"
+                                value="Realidad Virtual">
+                        </div>
+                        <div>
+                            <label for="bigData">Big Data</label>
+                            <input type="checkbox" id="bigData" name="seccionPreferida" value="Big Data">
+                        </div>
+                    </div>
+                    <div>
+                        DNI:<br>
+                        <input type="text" name="dni" id="dni" />
+                    </div>
+                    <div>
+                        Plan de suscripción:
+                        <select id="plan" name="plan">
+                            <option value="1">1€ al mes</option>
+                            <option value="3" selected>3€ al trimestre</option>
+                            <option value="10">10€ al año</option>
+                        </select>
+                    </div>
+                    <div>
+                        Fotocopia DNI:<br>
+                        <input type="file" name="fotocopiaDni" id="fotocopiaDni" />
+                    </div>
+                    <div>
+                        Observaciones:<br>
+                        <input type="text" name="observaciones" id="observaciones" />
+                    </div>
+                    <div class="genero">
+                        Género
+                        <br>
+                        <input type="radio" name="genero" value="1" /><label>Hombre</label>
+                        <br>
+                        <input type="radio" name="genero" value="2" /><label>Mujer</label>
+                        <br>
+                        <input type="radio" name="genero" value="3" /><label>Otro</label>
+                    </div>
+                    <div class="normas">
+                        Acepto las siguientes normas:
+                        <input type="checkbox" id="aceptarNormas" name="aceptarNormas" required>
+                        <li>Norma 1: No copiar contenido.</li>
+                        <li>Norma 2: No usar el contenido malintencionadamente.</li>
+                        <li>Norma 3: No usar esta página con fines económicos.</li>
+                    </div>
+                    <div>
+                        DataNac:<br>
+                        <input type="number" name="fecha" id="fecha" min="2020" max="2024" />
+                    </div>
+                    <div class="botonRegister">
+                        <button type="submit">SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
